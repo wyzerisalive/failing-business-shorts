@@ -1,0 +1,276 @@
+{
+  "mode": "part1_dilemma",
+  "episodeNumber": 1,
+  "business": {
+    "name": "Midnight Ramen Shop",
+    "emoji": "🍜",
+    "tagline": "Open 6PM–3AM · Est. 2019"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 14000
+      },
+      {
+        "frame": 8,
+        "value": 14000
+      },
+      {
+        "frame": 70,
+        "value": 4200
+      },
+      {
+        "frame": 100,
+        "value": 4200
+      },
+      {
+        "frame": 360,
+        "value": 3640
+      },
+      {
+        "frame": 384,
+        "value": 3640
+      },
+      {
+        "frame": 414,
+        "value": 1540
+      },
+      {
+        "frame": 660,
+        "value": 1380
+      },
+      {
+        "frame": 900,
+        "value": 1380
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "DAYS UNTIL BANKRUPTCY",
+    "initialValue": "5",
+    "crisisLabel": "TIME LEFT",
+    "crisisValue": "48 HOURS LEFT",
+    "switchFrame": 420
+  },
+  "chart": {
+    "title": "LAST 30 DAYS · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      313,
+      335,
+      370,
+      353,
+      296,
+      269,
+      299
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      437,
+      424,
+      420,
+      429,
+      447,
+      463,
+      467,
+      459,
+      447,
+      442,
+      451,
+      469,
+      485,
+      489
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (due in 5 days)",
+      "amount": "$3,800",
+      "percent": 82
+    },
+    {
+      "label": "Payroll · 4 cooks",
+      "amount": "$5,200",
+      "percent": 64
+    },
+    {
+      "label": "Spoilage + Card Debt",
+      "amount": "$1,900",
+      "percent": 41
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 110,
+      "mood": "panicked"
+    },
+    {
+      "from": 680,
+      "mood": "stressed"
+    }
+  ],
+  "event": {
+    "frame": 372,
+    "exitFrame": 650,
+    "tone": "danger",
+    "sender": "Kaito Noodle Supply",
+    "title": "PAYMENT DEMANDED",
+    "message": "No more credit. Pay cash upfront or tonight's noodle delivery is cancelled.",
+    "amount": "-$2,100"
+  },
+  "captions": [
+    {
+      "text": "This ramen shop has $4,200 left.",
+      "start": 4,
+      "end": 42,
+      "highlight": [
+        "left."
+      ]
+    },
+    {
+      "text": "Rent is due in 5 DAYS.",
+      "start": 42,
+      "end": 90,
+      "highlight": [
+        "DAYS."
+      ]
+    },
+    {
+      "text": "It burns $380 a day just to stay open.",
+      "start": 92,
+      "end": 172,
+      "highlight": [
+        "burns"
+      ]
+    },
+    {
+      "text": "Payroll alone eats 64% of revenue.",
+      "start": 172,
+      "end": 252,
+      "highlight": [
+        "Payroll"
+      ]
+    },
+    {
+      "text": "And a viral food critic comes TONIGHT.",
+      "start": 252,
+      "end": 360,
+      "highlight": [
+        "viral",
+        "TONIGHT."
+      ]
+    },
+    {
+      "text": "Then the supplier calls...",
+      "start": 372,
+      "end": 462,
+      "highlight": [
+        "supplier"
+      ]
+    },
+    {
+      "text": "Pay $2,100 upfront or NO noodles tonight.",
+      "start": 462,
+      "end": 562,
+      "highlight": [
+        "NO"
+      ]
+    },
+    {
+      "text": "That leaves 48 HOURS before bankruptcy.",
+      "start": 562,
+      "end": 660,
+      "highlight": [
+        "bankruptcy."
+      ]
+    },
+    {
+      "text": "You own this shop. What do you do?",
+      "start": 664,
+      "end": 735,
+      "highlight": [
+        "You",
+        "do?"
+      ]
+    },
+    {
+      "text": "A: go all-in for the critic.",
+      "start": 738,
+      "end": 818,
+      "highlight": [
+        "all-in"
+      ]
+    },
+    {
+      "text": "B: cut staff and survive.",
+      "start": 818,
+      "end": 900,
+      "highlight": [
+        "cut",
+        "survive."
+      ]
+    }
+  ],
+  "decision": {
+    "question": "WHAT WOULD YOU DO?",
+    "optionA": {
+      "title": "ALL-IN FOR THE CRITIC",
+      "description": "Pay the supplier, buy premium pork, keep all 4 cooks.",
+      "impact": "-$3,000",
+      "risk": "HIGH"
+    },
+    "optionB": {
+      "title": "CUT STAFF & SURVIVE",
+      "description": "Send 2 cooks home, serve a 3-item menu tonight.",
+      "impact": "+$800 / -20% Morale",
+      "risk": "MEDIUM"
+    },
+    "cta": "COMMENT A OR B BEFORE PART 2",
+    "timerStart": 735,
+    "timerSeconds": 5
+  }
+}

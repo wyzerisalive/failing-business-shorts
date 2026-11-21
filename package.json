@@ -10,9 +10,12 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.545",
+    "@remotion/fonts": "4.0.545",
+    "@remotion/media": "4.0.545",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.545"
+    "remotion": "4.0.545",
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.545",
@@ -26,7 +29,12 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "sfx": "node scripts/generate-sfx.js",
+    "predev": "node scripts/generate-sfx.js",
+    "render": "remotion render FailingBusiness out/episode1-part1.mp4",
+    "render:part2": "remotion render FailingBusiness-Part2 out/episode1-part2.mp4",
+    "preview": "remotion still FailingBusiness out/preview.png --frame=720"
   },
   "allowScripts": {
     "esbuild": false

@@ -1,0 +1,246 @@
+{
+  "mode": "part2_outcome",
+  "episodeNumber": 1,
+  "business": {
+    "name": "Midnight Ramen Shop",
+    "emoji": "🍜",
+    "tagline": "Open 6PM–3AM · Est. 2019"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 1380
+      },
+      {
+        "frame": 45,
+        "value": 1380
+      },
+      {
+        "frame": 95,
+        "value": -1620
+      },
+      {
+        "frame": 380,
+        "value": -1620
+      },
+      {
+        "frame": 640,
+        "value": 7780
+      },
+      {
+        "frame": 900,
+        "value": 7780
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "ACCOUNT STATUS",
+    "initialValue": "OVERDRAWN",
+    "crisisLabel": "NEW RUNWAY",
+    "crisisValue": "26 DAYS",
+    "switchFrame": 420
+  },
+  "chart": {
+    "title": "THE CRITIC EFFECT · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      313,
+      300,
+      420,
+      610,
+      1450,
+      2380,
+      2910
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      437,
+      424,
+      420,
+      429,
+      447,
+      463,
+      467,
+      459,
+      520,
+      540,
+      560,
+      620,
+      640,
+      610
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (paid in full)",
+      "amount": "$3,800",
+      "percent": 100
+    },
+    {
+      "label": "Payroll · 4 cooks kept",
+      "amount": "$5,200",
+      "percent": 38
+    },
+    {
+      "label": "Card Debt remaining",
+      "amount": "$600",
+      "percent": 12
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 95,
+      "mood": "panicked"
+    },
+    {
+      "from": 400,
+      "mood": "relieved"
+    }
+  ],
+  "event": {
+    "frame": 372,
+    "exitFrame": 650,
+    "tone": "success",
+    "sender": "@nightbites_critic",
+    "title": "5★ REVIEW POSTED",
+    "message": "\"Best tonkotsu in the city. Line around the block by midnight.\" 2.1M views.",
+    "amount": "+$9,400"
+  },
+  "captions": [
+    {
+      "text": "64% of you said go ALL-IN.",
+      "start": 6,
+      "end": 90,
+      "highlight": [
+        "ALL-IN."
+      ]
+    },
+    {
+      "text": "Paying the supplier put the shop at -$1,620.",
+      "start": 92,
+      "end": 200,
+      "highlight": [
+        "supplier"
+      ]
+    },
+    {
+      "text": "Overdrawn. One night to save it.",
+      "start": 200,
+      "end": 300,
+      "highlight": [
+        "Overdrawn."
+      ]
+    },
+    {
+      "text": "Then the critic walked in...",
+      "start": 300,
+      "end": 372,
+      "highlight": [
+        "critic"
+      ]
+    },
+    {
+      "text": "FIVE stars. 2.1 million views.",
+      "start": 376,
+      "end": 480,
+      "highlight": [
+        "FIVE"
+      ]
+    },
+    {
+      "text": "The line hit the block by midnight.",
+      "start": 480,
+      "end": 570,
+      "highlight": [
+        "line"
+      ]
+    },
+    {
+      "text": "$9,400 in 48 hours.",
+      "start": 570,
+      "end": 660
+    },
+    {
+      "text": "The shop SURVIVED. Your call worked.",
+      "start": 664,
+      "end": 790,
+      "highlight": [
+        "SURVIVED."
+      ]
+    },
+    {
+      "text": "Follow for the next failing business.",
+      "start": 790,
+      "end": 900,
+      "highlight": [
+        "Follow"
+      ]
+    }
+  ],
+  "outcome": {
+    "votedChoice": "A",
+    "votedTitle": "ALL-IN FOR THE CRITIC",
+    "votePercent": 64,
+    "verdict": "SURVIVED",
+    "headline": "Midnight Ramen lives to see another month.",
+    "stats": [
+      {
+        "label": "48h revenue",
+        "value": "+$9,400"
+      },
+      {
+        "label": "New runway",
+        "value": "26 days"
+      },
+      {
+        "label": "Staff kept",
+        "value": "4 / 4"
+      }
+    ],
+    "cta": "FOLLOW FOR EPISODE 2"
+  }
+}
