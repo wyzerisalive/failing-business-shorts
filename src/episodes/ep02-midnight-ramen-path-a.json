@@ -17,19 +17,19 @@
         "value": 3845
       },
       {
-        "frame": 120,
+        "frame": 216,
         "value": 3845
       },
       {
-        "frame": 160,
+        "frame": 258,
         "value": 5045
       },
       {
-        "frame": 330,
+        "frame": 415,
         "value": 5045
       },
       {
-        "frame": 372,
+        "frame": 459,
         "value": 2945
       },
       {
@@ -43,7 +43,7 @@
     "initialValue": "$3,845",
     "crisisLabel": "NET CASH REMAINING",
     "crisisValue": "-$900",
-    "switchFrame": 630
+    "switchFrame": 715
   },
   "chart": {
     "title": "LAST 30 DAYS · REVENUE vs BURN",
@@ -148,7 +148,7 @@
     }
   ],
   "event": {
-    "frame": 336,
+    "frame": 332,
     "exitFrame": 612,
     "tone": "danger",
     "sender": "Friday Night Report",
@@ -158,68 +158,174 @@
   },
   "captions": [
     {
-      "text": "OPTION A: CUT NIGHT-SHIFT PAYROLL",
-      "start": 4,
-      "end": 72,
+      "text": "OPTION A: CUT NIGHT-SHIFT PAYROLL.",
+      "start": 2,
+      "end": 82,
+      "wordFrames": [
+        2,
+        14,
+        31,
+        41,
+        55
+      ],
       "highlight": [
         "CUT"
       ]
     },
     {
-      "text": "STARTING CASH: $3,845",
-      "start": 72,
-      "end": 120,
+      "text": "STARTING CASH: $3,845.",
+      "start": 82,
+      "end": 192,
+      "wordFrames": [
+        82,
+        91,
+        113
+      ],
       "highlight": [
         "STARTING"
       ]
     },
     {
-      "text": "LABOR COSTS DROP -$1,200/MO",
-      "start": 120,
-      "end": 225,
+      "text": "LABOR COSTS DROP $1,200 A MONTH.",
+      "start": 192,
+      "end": 271,
+      "wordFrames": [
+        192,
+        202,
+        216,
+        223,
+        250,
+        257
+      ],
       "highlight": [
         "DROP"
       ]
     },
     {
-      "text": "PAYROLL SAVED: +$1,200",
-      "start": 225,
-      "end": 330,
+      "text": "PAYROLL SAVED!",
+      "start": 271,
+      "end": 320,
+      "wordFrames": [
+        271,
+        286
+      ],
       "highlight": [
-        "SAVED:"
+        "SAVED!"
       ]
     },
     {
-      "text": "SOLO COOK BOTTLENECK -> REVENUE -$2,100",
-      "start": 336,
-      "end": 490,
+      "text": "BUT WITH A SOLO COOK, THE KITCHEN BOTTLENECKS.",
+      "start": 320,
+      "end": 406,
+      "wordFrames": [
+        320,
+        324,
+        329,
+        332,
+        343,
+        358,
+        362,
+        372
+      ],
       "highlight": [
-        "BOTTLENECK"
+        "BOTTLENECKS."
       ]
     },
     {
-      "text": "LOST FRIDAY SALES: -$2,100",
-      "start": 490,
-      "end": 630,
+      "text": "REVENUE DROPS $2,100.",
+      "start": 406,
+      "end": 480,
+      "wordFrames": [
+        406,
+        415,
+        427
+      ],
+      "highlight": [
+        "DROPS"
+      ]
+    },
+    {
+      "text": "LOST FRIDAY SALES.",
+      "start": 480,
+      "end": 529,
+      "wordFrames": [
+        480,
+        487,
+        499
+      ],
       "highlight": [
         "LOST"
       ]
     },
     {
-      "text": "A: RAISE PRICES +15% | B: RENEGOTIATE RENT",
-      "start": 630,
-      "end": 780,
+      "text": "NOW YOU DECIDE.",
+      "start": 529,
+      "end": 569,
+      "wordFrames": [
+        529,
+        535,
+        540
+      ],
       "highlight": [
-        "RAISE",
+        "DECIDE."
+      ]
+    },
+    {
+      "text": "A: RAISE PRICES 15%.",
+      "start": 569,
+      "end": 650,
+      "wordFrames": [
+        569,
+        589,
+        595,
+        610
+      ],
+      "highlight": [
+        "RAISE"
+      ]
+    },
+    {
+      "text": "B: RENEGOTIATE RENT.",
+      "start": 650,
+      "end": 715,
+      "wordFrames": [
+        650,
+        670,
+        691
+      ],
+      "highlight": [
         "RENEGOTIATE"
       ]
     },
     {
-      "text": "NET CASH REMAINING: $2,945 (-$900)",
-      "start": 780,
-      "end": 900,
+      "text": "NET CASH REMAINING: $2,945.",
+      "start": 715,
+      "end": 826,
+      "wordFrames": [
+        715,
+        720,
+        734,
+        750
+      ],
       "highlight": [
         "NET"
+      ]
+    },
+    {
+      "text": "COMMENT A OR B BEFORE PART 3!",
+      "start": 826,
+      "end": 900,
+      "wordFrames": [
+        826,
+        838,
+        841,
+        847,
+        858,
+        866,
+        874
+      ],
+      "highlight": [
+        "COMMENT"
       ]
     }
   ],
