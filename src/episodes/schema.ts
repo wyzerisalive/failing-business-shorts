@@ -104,6 +104,8 @@ export const episodeSchema = z.object({
       optionA: option,
       optionB: option,
       cta: z.string(),
+      /** Optional frame the A/B cards come in. Defaults to 660 (22s). */
+      startFrame: z.number().int().min(0).optional(),
       /** First frame of the 5-second vote timer. */
       timerStart: z.number().int(),
       timerSeconds: z.number().int().min(1),

@@ -149,7 +149,7 @@
   ],
   "event": {
     "frame": 332,
-    "exitFrame": 612,
+    "exitFrame": 530,
     "tone": "danger",
     "sender": "Friday Night Report",
     "title": "LOST FRIDAY SALES",
@@ -345,6 +345,7 @@
     },
     "cta": "COMMENT A OR B BEFORE PART 3",
     "timerStart": 735,
-    "timerSeconds": 5
+    "timerSeconds": 5,
+    "startFrame": 545
   }
 }

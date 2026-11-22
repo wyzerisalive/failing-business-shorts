@@ -1,7 +1,7 @@
 import { Audio } from "@remotion/media";
 import { Sequence, staticFile, useVideoConfig } from "remotion";
 import type { Episode } from "../episodes/schema";
-import { TIMELINE } from "../timeline";
+import { TIMELINE, finalStart } from "../timeline";
 
 type Sfx = "tick" | "alert" | "cash_drop" | "whoosh";
 
@@ -50,8 +50,8 @@ export const buildSfxEvents = (ep: Episode, fps: number): SfxEvent[] => {
 
   // Final segment.
   if (ep.mode === "part1_dilemma" && ep.decision) {
-    add(TIMELINE.complicationEnd + 4, "whoosh", 0.9);
-    add(TIMELINE.complicationEnd + 14, "whoosh", 0.7);
+    add(finalStart(ep) + 4, "whoosh", 0.9);
+    add(finalStart(ep) + 14, "whoosh", 0.7);
     for (let s = 0; s < ep.decision.timerSeconds; s++) {
       add(ep.decision.timerStart + s * fps, "tick", 1);
     }

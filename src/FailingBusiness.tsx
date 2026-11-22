@@ -21,7 +21,7 @@ import { HeaderBar } from "./components/HeaderBar";
 import { SfxLayer } from "./components/SfxLayer";
 import type { Episode } from "./episodes/schema";
 import { COLORS, moodAt, valueAt } from "./theme";
-import { TIMELINE } from "./timeline";
+import { TIMELINE, finalStart } from "./timeline";
 
 /**
  * Layout (all y values in px; safe area is 180 → 1640):
@@ -80,7 +80,7 @@ export const FailingBusiness: React.FC<Episode> = (episode) => {
 
   // ---- Dashboard dims while the event card or the final segment is on screen.
   const eventActive = frame >= event.frame && frame <= event.exitFrame + 10;
-  const finalIn = interpolate(frame, [TIMELINE.complicationEnd, TIMELINE.complicationEnd + 12], [0, 1], {
+  const finalIn = interpolate(frame, [finalStart(episode), finalStart(episode) + 12], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -159,7 +159,7 @@ export const FailingBusiness: React.FC<Episode> = (episode) => {
         {episode.mode === "part1_dilemma" && episode.decision && (
           <DecisionCards
             decision={episode.decision}
-            from={TIMELINE.complicationEnd}
+            from={finalStart(episode)}
             top={LAYOUT.finalTop}
             cardsHeight={480}
           />
