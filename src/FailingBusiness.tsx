@@ -1,8 +1,10 @@
+import { Audio } from "@remotion/media";
 import {
   AbsoluteFill,
   Easing,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -179,6 +181,7 @@ export const FailingBusiness: React.FC<Episode> = (episode) => {
       />
 
       <SfxLayer episode={episode} />
+      {episode.voiceoverFile ? <Audio src={staticFile(episode.voiceoverFile)} /> : null}
     </AbsoluteFill>
   );
 };

@@ -144,8 +144,9 @@ export const HeaderBar: React.FC<{
           letterSpacing: 1,
         }}
       >
-        {business.tagline} · EP {episode.episodeNumber}
-        {episode.mode === "part2_outcome" ? " · PART 2" : " · PART 1"}
+        {business.tagline} ·{" "}
+        {episode.caseLabel ??
+          `EP ${episode.episodeNumber} · ${episode.mode === "part2_outcome" ? "PART 2" : "PART 1"}`}
       </div>
     </div>
   );

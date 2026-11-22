@@ -53,6 +53,10 @@ export type Mood = z.infer<typeof moodEnum>;
 export const episodeSchema = z.object({
   mode: z.enum(["part1_dilemma", "part2_outcome"]),
   episodeNumber: z.number().int(),
+  /** Optional header label, e.g. "CASE #01 — PART 2". Replaces the default "EP n · PART n". */
+  caseLabel: z.string().optional(),
+  /** Optional voiceover in public/, e.g. "voiceover-ep2.mp3". Plays from frame 0. */
+  voiceoverFile: z.string().optional(),
   business: z.object({
     name: z.string(),
     emoji: z.string(),

@@ -1,0 +1,244 @@
+{
+  "mode": "part1_dilemma",
+  "episodeNumber": 2,
+  "caseLabel": "CASE #01 — PART 2",
+  "voiceoverFile": "voiceover-ep2.mp3",
+  "business": {
+    "name": "Midnight Ramen Shop: Path A",
+    "emoji": "🍜",
+    "tagline": "Simulation: Cut Night-Shift Payroll"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 3845
+      },
+      {
+        "frame": 120,
+        "value": 3845
+      },
+      {
+        "frame": 160,
+        "value": 5045
+      },
+      {
+        "frame": 330,
+        "value": 5045
+      },
+      {
+        "frame": 372,
+        "value": 2945
+      },
+      {
+        "frame": 900,
+        "value": 2945
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "STARTING CASH",
+    "initialValue": "$3,845",
+    "crisisLabel": "NET CASH REMAINING",
+    "crisisValue": "-$900",
+    "switchFrame": 630
+  },
+  "chart": {
+    "title": "LAST 30 DAYS · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      13,
+      35,
+      70,
+      53,
+      -4,
+      -31,
+      -1
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      397,
+      384,
+      380,
+      389,
+      407,
+      423,
+      427,
+      419,
+      407,
+      402,
+      411,
+      429,
+      445,
+      449
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (due in 5 days)",
+      "amount": "$3,800",
+      "percent": 82
+    },
+    {
+      "label": "Payroll · night shift cut",
+      "amount": "$4,000",
+      "percent": 49
+    },
+    {
+      "label": "Spoilage + Card Debt",
+      "amount": "$1,900",
+      "percent": 41
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 130,
+      "mood": "relieved"
+    },
+    {
+      "from": 336,
+      "mood": "panicked"
+    },
+    {
+      "from": 680,
+      "mood": "stressed"
+    }
+  ],
+  "event": {
+    "frame": 336,
+    "exitFrame": 612,
+    "tone": "danger",
+    "sender": "Friday Night Report",
+    "title": "LOST FRIDAY SALES",
+    "message": "Solo cook bottleneck -> revenue -$2,100.",
+    "amount": "-$2,100"
+  },
+  "captions": [
+    {
+      "text": "OPTION A: CUT NIGHT-SHIFT PAYROLL",
+      "start": 4,
+      "end": 72,
+      "highlight": [
+        "CUT"
+      ]
+    },
+    {
+      "text": "STARTING CASH: $3,845",
+      "start": 72,
+      "end": 120,
+      "highlight": [
+        "STARTING"
+      ]
+    },
+    {
+      "text": "LABOR COSTS DROP -$1,200/MO",
+      "start": 120,
+      "end": 225,
+      "highlight": [
+        "DROP"
+      ]
+    },
+    {
+      "text": "PAYROLL SAVED: +$1,200",
+      "start": 225,
+      "end": 330,
+      "highlight": [
+        "SAVED:"
+      ]
+    },
+    {
+      "text": "SOLO COOK BOTTLENECK -> REVENUE -$2,100",
+      "start": 336,
+      "end": 490,
+      "highlight": [
+        "BOTTLENECK"
+      ]
+    },
+    {
+      "text": "LOST FRIDAY SALES: -$2,100",
+      "start": 490,
+      "end": 630,
+      "highlight": [
+        "LOST"
+      ]
+    },
+    {
+      "text": "A: RAISE PRICES +15% | B: RENEGOTIATE RENT",
+      "start": 630,
+      "end": 780,
+      "highlight": [
+        "RAISE",
+        "RENEGOTIATE"
+      ]
+    },
+    {
+      "text": "NET CASH REMAINING: $2,945 (-$900)",
+      "start": 780,
+      "end": 900,
+      "highlight": [
+        "NET"
+      ]
+    }
+  ],
+  "decision": {
+    "question": "WHAT NOW?",
+    "optionA": {
+      "title": "RAISE PRICES +15%",
+      "description": "Raise menu prices 15% to win back the lost Friday revenue.",
+      "impact": "+15% PRICES",
+      "risk": "MEDIUM"
+    },
+    "optionB": {
+      "title": "RENEGOTIATE RENT",
+      "description": "Ask the landlord for lower rent before the next payment.",
+      "impact": "RENT ↓",
+      "risk": "MEDIUM"
+    },
+    "cta": "COMMENT A OR B BEFORE PART 3",
+    "timerStart": 735,
+    "timerSeconds": 5
+  }
+}
