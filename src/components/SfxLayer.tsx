@@ -51,7 +51,7 @@ export const buildSfxEvents = (ep: Episode, fps: number): SfxEvent[] => {
   // Final segment.
   if (ep.mode === "part1_dilemma" && ep.decision) {
     add(finalStart(ep) + 4, "whoosh", 0.9);
-    add(finalStart(ep) + 14, "whoosh", 0.7);
+    add(ep.decision.optionBFrame ?? finalStart(ep) + 14, "whoosh", 0.7);
     for (let s = 0; s < ep.decision.timerSeconds; s++) {
       add(ep.decision.timerStart + s * fps, "tick", 1);
     }
