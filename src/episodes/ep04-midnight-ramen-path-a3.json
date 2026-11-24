@@ -1,0 +1,355 @@
+{
+  "mode": "part1_dilemma",
+  "episodeNumber": 4,
+  "caseLabel": "CASE #01 — PART 4",
+  "voiceoverFile": "voiceover-ep4.mp3",
+  "business": {
+    "name": "Midnight Ramen Shop: The Rent Trap",
+    "emoji": "🍜",
+    "tagline": "Simulation: Renegotiate Landlord Rent"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 2145
+      },
+      {
+        "frame": 218,
+        "value": 2145
+      },
+      {
+        "frame": 269,
+        "value": 2745
+      },
+      {
+        "frame": 413,
+        "value": 2745
+      },
+      {
+        "frame": 478,
+        "value": 1795
+      },
+      {
+        "frame": 900,
+        "value": 1795
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "STARTING CASH",
+    "initialValue": "$2,145",
+    "crisisLabel": "NET CASH REMAINING",
+    "crisisValue": "-$350",
+    "switchFrame": 665
+  },
+  "chart": {
+    "title": "LAST 30 DAYS · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      13,
+      40,
+      80,
+      61,
+      -3,
+      -20,
+      -1
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      397,
+      384,
+      380,
+      389,
+      407,
+      423,
+      427,
+      431,
+      419,
+      414,
+      423,
+      441,
+      457,
+      461
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (renegotiated)",
+      "amount": "$3,200",
+      "percent": 70
+    },
+    {
+      "label": "Payroll · night shift cut",
+      "amount": "$4,000",
+      "percent": 49
+    },
+    {
+      "label": "Revenue share (10%)",
+      "amount": "$950",
+      "percent": 25
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 218,
+      "mood": "relieved"
+    },
+    {
+      "from": 322,
+      "mood": "panicked"
+    },
+    {
+      "from": 487,
+      "mood": "stressed"
+    }
+  ],
+  "event": {
+    "frame": 322,
+    "exitFrame": 487,
+    "tone": "danger",
+    "sender": "Landlord · New Lease",
+    "title": "REVENUE SHARE FEE",
+    "message": "10% revenue share clause -> -$950.",
+    "amount": "-$950"
+  },
+  "captions": [
+    {
+      "text": "OPTION A: RENEGOTIATE LANDLORD RENT.",
+      "start": 2,
+      "end": 91,
+      "wordFrames": [
+        2,
+        14,
+        34,
+        58,
+        72
+      ],
+      "highlight": [
+        "RENEGOTIATE"
+      ]
+    },
+    {
+      "text": "STARTING CASH: $2,145.",
+      "start": 91,
+      "end": 199,
+      "wordFrames": [
+        91,
+        101,
+        122
+      ],
+      "highlight": [
+        "STARTING"
+      ]
+    },
+    {
+      "text": "BASE RENT DROPS $600 A MONTH.",
+      "start": 199,
+      "end": 271,
+      "wordFrames": [
+        199,
+        210,
+        218,
+        226,
+        250,
+        257
+      ],
+      "highlight": [
+        "DROPS"
+      ]
+    },
+    {
+      "text": "RENT RELIEF!",
+      "start": 271,
+      "end": 307,
+      "wordFrames": [
+        271,
+        278
+      ],
+      "highlight": [
+        "RELIEF!"
+      ]
+    },
+    {
+      "text": "BUT THE NEW LEASE HAS",
+      "start": 307,
+      "end": 336,
+      "wordFrames": [
+        307,
+        310,
+        314,
+        322,
+        331
+      ],
+      "highlight": [
+        "LEASE"
+      ]
+    },
+    {
+      "text": "A 10% REVENUE SHARE CLAUSE.",
+      "start": 336,
+      "end": 404,
+      "wordFrames": [
+        336,
+        341,
+        360,
+        372,
+        379
+      ],
+      "highlight": [
+        "CLAUSE."
+      ]
+    },
+    {
+      "text": "THAT'S $950 IN FEES.",
+      "start": 404,
+      "end": 487,
+      "wordFrames": [
+        404,
+        413,
+        451,
+        456
+      ],
+      "highlight": [
+        "FEES."
+      ]
+    },
+    {
+      "text": "NOW YOU DECIDE.",
+      "start": 487,
+      "end": 526,
+      "wordFrames": [
+        487,
+        494,
+        499
+      ],
+      "highlight": [
+        "DECIDE."
+      ]
+    },
+    {
+      "text": "A: CUT TO 4 SIGNATURE BOWLS.",
+      "start": 526,
+      "end": 606,
+      "wordFrames": [
+        526,
+        547,
+        553,
+        560,
+        566,
+        581
+      ],
+      "highlight": [
+        "SIGNATURE"
+      ]
+    },
+    {
+      "text": "B: GO DELIVERY ONLY.",
+      "start": 606,
+      "end": 665,
+      "wordFrames": [
+        606,
+        620,
+        626,
+        641
+      ],
+      "highlight": [
+        "DELIVERY"
+      ]
+    },
+    {
+      "text": "NET CASH REMAINING: $1,795.",
+      "start": 665,
+      "end": 775,
+      "wordFrames": [
+        665,
+        672,
+        679,
+        700
+      ],
+      "highlight": [
+        "NET"
+      ]
+    },
+    {
+      "text": "COMMENT A OR B BEFORE PART 5!",
+      "start": 775,
+      "end": 900,
+      "wordFrames": [
+        775,
+        787,
+        791,
+        794,
+        802,
+        811,
+        818
+      ],
+      "highlight": [
+        "COMMENT"
+      ]
+    }
+  ],
+  "decision": {
+    "question": "WHAT NOW?",
+    "optionA": {
+      "title": "4 SIGNATURE BOWLS",
+      "description": "Cut the menu to 4 signature bowls to slash ingredient costs.",
+      "impact": "MENU ↓",
+      "risk": "MEDIUM"
+    },
+    "optionB": {
+      "title": "DELIVERY ONLY",
+      "description": "Close the dining room and sell through delivery apps only.",
+      "impact": "DINE-IN ✕",
+      "risk": "HIGH"
+    },
+    "cta": "COMMENT A OR B BEFORE PART 5",
+    "startFrame": 518,
+    "optionBFrame": 606,
+    "timerStart": 775,
+    "timerSeconds": 4
+  }
+}

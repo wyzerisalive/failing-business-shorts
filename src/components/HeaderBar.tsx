@@ -131,7 +131,7 @@ export const HeaderBar: React.FC<{
           color: COLORS.text,
         }}
       >
-        <span style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1 }}>
+        <span style={{ fontSize: business.name.length > 32 ? 42 : 50, fontWeight: 900, letterSpacing: -1, whiteSpace: "nowrap" }}>
           {business.emoji} {business.name}
         </span>
       </div>

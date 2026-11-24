@@ -6,6 +6,7 @@ import episode1 from "./episodes/episode1.json";
 import episode1Part2 from "./episodes/episode1-part2.json";
 import ep02 from "./episodes/ep02-midnight-ramen-path-a.json";
 import ep03 from "./episodes/ep03-midnight-ramen-path-a2.json";
+import ep04 from "./episodes/ep04-midnight-ramen-path-a3.json";
 
 /**
  * To add an episode: drop a new JSON file in src/episodes/, import it here,
@@ -16,6 +17,7 @@ const EPISODES = [
   { id: "FailingBusiness-Part2", data: episode1Part2 },
   { id: "FailingBusiness-Ep02", data: ep02 },
   { id: "FailingBusiness-Part3", data: ep03 },
+  { id: "FailingBusiness-Part4", data: ep04 },
 ];
 
 export const RemotionRoot: React.FC = () => {
