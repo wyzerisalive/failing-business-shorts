@@ -2,6 +2,8 @@ import { Composition, Folder } from "remotion";
 import { FailingBusiness } from "./FailingBusiness";
 import { episodeSchema } from "./episodes/schema";
 import { VIDEO } from "./theme";
+import { PovRestaurantComposition } from "./components/pov/PovRestaurantComposition";
+import { RESTAURANT_POV_EPISODES } from "./data/restaurant-pov-episodes";
 import episode1 from "./episodes/episode1.json";
 import episode1Part2 from "./episodes/episode1-part2.json";
 import ep02 from "./episodes/ep02-midnight-ramen-path-a.json";
@@ -24,20 +26,33 @@ const EPISODES = [
 
 export const RemotionRoot: React.FC = () => {
   return (
-    <Folder name="Save-This-Business">
-      {EPISODES.map(({ id, data }) => (
+    <>
+      <Folder name="Save-This-Business">
+        {EPISODES.map(({ id, data }) => (
+          <Composition
+            key={id}
+            id={id}
+            component={FailingBusiness}
+            schema={episodeSchema}
+            defaultProps={episodeSchema.parse(data)}
+            durationInFrames={VIDEO.durationInFrames}
+            fps={VIDEO.fps}
+            width={VIDEO.width}
+            height={VIDEO.height}
+          />
+        ))}
+      </Folder>
+      <Folder name="Restaurant-POV">
         <Composition
-          key={id}
-          id={id}
-          component={FailingBusiness}
-          schema={episodeSchema}
-          defaultProps={episodeSchema.parse(data)}
-          durationInFrames={VIDEO.durationInFrames}
-          fps={VIDEO.fps}
-          width={VIDEO.width}
-          height={VIDEO.height}
+          id="RestaurantPov-Ep1"
+          component={PovRestaurantComposition}
+          durationInFrames={900}
+          fps={30}
+          width={1080}
+          height={1920}
+          defaultProps={{ episode: RESTAURANT_POV_EPISODES[0] }}
         />
-      ))}
-    </Folder>
+      </Folder>
+    </>
   );
 };
