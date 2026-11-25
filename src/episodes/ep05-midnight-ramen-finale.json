@@ -1,0 +1,353 @@
+{
+  "mode": "part2_outcome",
+  "episodeNumber": 5,
+  "caseLabel": "CASE #01 — FINALE",
+  "voiceoverFile": "voiceover-ep5.mp3",
+  "business": {
+    "name": "Midnight Ramen Shop: Final Verdict",
+    "emoji": "🍜",
+    "tagline": "Simulation: Cut Menu to 4 Signature Bowls"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 1795
+      },
+      {
+        "frame": 269,
+        "value": 1795
+      },
+      {
+        "frame": 331,
+        "value": 3195
+      },
+      {
+        "frame": 490,
+        "value": 3195
+      },
+      {
+        "frame": 542,
+        "value": 4120
+      },
+      {
+        "frame": 900,
+        "value": 4120
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "FINAL STARTING CASH",
+    "initialValue": "$1,795",
+    "crisisLabel": "FINAL VERDICT",
+    "crisisValue": "PROFITABLE",
+    "switchFrame": 792
+  },
+  "chart": {
+    "title": "LAST 30 DAYS · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      13,
+      40,
+      354,
+      413,
+      471,
+      527,
+      556
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      397,
+      384,
+      380,
+      389,
+      407,
+      423,
+      427,
+      431,
+      419,
+      414,
+      423,
+      441,
+      457,
+      461
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (renegotiated)",
+      "amount": "$3,200",
+      "percent": 70
+    },
+    {
+      "label": "Payroll · night shift cut",
+      "amount": "$4,000",
+      "percent": 49
+    },
+    {
+      "label": "Food & prep (14 items cut)",
+      "amount": "-$1,400",
+      "percent": 30
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 269,
+      "mood": "relieved"
+    }
+  ],
+  "event": {
+    "frame": 388,
+    "exitFrame": 592,
+    "tone": "success",
+    "sender": "Weekend Sales Report",
+    "title": "VOLUME REBOUND",
+    "message": "6-min tickets -> weekend sales +$925.",
+    "amount": "+$925"
+  },
+  "captions": [
+    {
+      "text": "LAST CALL: CUT TO 4 SIGNATURE BOWLS.",
+      "start": 5,
+      "end": 89,
+      "wordFrames": [
+        5,
+        14,
+        34,
+        40,
+        46,
+        55,
+        70
+      ],
+      "highlight": [
+        "CUT"
+      ]
+    },
+    {
+      "text": "FINAL STARTING CASH: $1,795.",
+      "start": 89,
+      "end": 215,
+      "wordFrames": [
+        89,
+        98,
+        108,
+        130
+      ],
+      "highlight": [
+        "FINAL"
+      ]
+    },
+    {
+      "text": "14 ITEMS CUT.",
+      "start": 215,
+      "end": 254,
+      "wordFrames": [
+        215,
+        223,
+        235
+      ],
+      "highlight": [
+        "CUT."
+      ]
+    },
+    {
+      "text": "FOOD & PREP SAVE $1,400.",
+      "start": 254,
+      "end": 332,
+      "wordFrames": [
+        254,
+        258,
+        262,
+        269,
+        281
+      ],
+      "highlight": [
+        "SAVE"
+      ]
+    },
+    {
+      "text": "WASTE & PREP SAVINGS!",
+      "start": 332,
+      "end": 388,
+      "wordFrames": [
+        332,
+        343,
+        349,
+        355
+      ],
+      "highlight": [
+        "SAVINGS!"
+      ]
+    },
+    {
+      "text": "6-MIN TICKETS BRING THE CROWDS BACK.",
+      "start": 388,
+      "end": 464,
+      "wordFrames": [
+        388,
+        398,
+        413,
+        420,
+        425,
+        442
+      ],
+      "highlight": [
+        "CROWDS"
+      ]
+    },
+    {
+      "text": "WEEKEND SALES UP $925.",
+      "start": 464,
+      "end": 548,
+      "wordFrames": [
+        464,
+        473,
+        482,
+        490
+      ],
+      "highlight": [
+        "UP"
+      ]
+    },
+    {
+      "text": "VOLUME REBOUND!",
+      "start": 548,
+      "end": 592,
+      "wordFrames": [
+        548,
+        559
+      ],
+      "highlight": [
+        "REBOUND!"
+      ]
+    },
+    {
+      "text": "CASE #01: CLOSED.",
+      "start": 592,
+      "end": 647,
+      "wordFrames": [
+        592,
+        595,
+        630
+      ],
+      "highlight": [
+        "CLOSED."
+      ]
+    },
+    {
+      "text": "THE SHOP SURVIVES.",
+      "start": 647,
+      "end": 692,
+      "wordFrames": [
+        647,
+        650,
+        660
+      ],
+      "highlight": [
+        "SURVIVES."
+      ]
+    },
+    {
+      "text": "FINAL CASH: $4,120.",
+      "start": 692,
+      "end": 792,
+      "wordFrames": [
+        692,
+        698,
+        720
+      ],
+      "highlight": [
+        "FINAL"
+      ]
+    },
+    {
+      "text": "PROFITABLE!",
+      "start": 792,
+      "end": 820,
+      "wordFrames": [
+        792
+      ],
+      "highlight": [
+        "PROFITABLE!"
+      ]
+    },
+    {
+      "text": "FOLLOW FOR CASE #02!",
+      "start": 820,
+      "end": 900,
+      "wordFrames": [
+        820,
+        826,
+        830,
+        838
+      ],
+      "highlight": [
+        "FOLLOW"
+      ]
+    }
+  ],
+  "outcome": {
+    "votedChoice": "A",
+    "votedTitle": "4 SIGNATURE BOWLS",
+    "verdict": "SURVIVED",
+    "headline": "Case #01 closed — the shop survives.",
+    "stats": [
+      {
+        "label": "Net change",
+        "value": "+$2,325"
+      },
+      {
+        "label": "Final cash",
+        "value": "$4,120"
+      },
+      {
+        "label": "Menu",
+        "value": "4 bowls"
+      }
+    ],
+    "cta": "FOLLOW FOR CASE #02"
+  }
+}

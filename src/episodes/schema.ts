@@ -119,7 +119,7 @@ export const episodeSchema = z.object({
     .object({
       votedChoice: z.enum(["A", "B"]),
       votedTitle: z.string(),
-      votePercent: z.number().min(0).max(100),
+      votePercent: z.number().min(0).max(100).optional(),
       verdict: z.enum(["SURVIVED", "BANKRUPT", "ON LIFE SUPPORT"]),
       headline: z.string(),
       stats: z.array(z.object({ label: z.string(), value: z.string() })).max(3),
