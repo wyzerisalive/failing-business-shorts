@@ -108,7 +108,7 @@ export const DecisionCards: React.FC<{
 
   const q = spring({ frame: frame - from, fps, config: { damping: 14, stiffness: 160 } });
   const enterA = spring({ frame: frame - from - 8, fps, config: { damping: 16, stiffness: 110 } });
-  const enterB = spring({ frame: frame - from - 16, fps, config: { damping: 16, stiffness: 110 } });
+  const enterB = spring({ frame: frame - (decision.optionBFrame ?? from + 16), fps, config: { damping: 16, stiffness: 110 } });
 
   const timerFrames = decision.timerSeconds * fps;
   const timerProgress = interpolate(

@@ -53,6 +53,10 @@ export type Mood = z.infer<typeof moodEnum>;
 export const episodeSchema = z.object({
   mode: z.enum(["part1_dilemma", "part2_outcome"]),
   episodeNumber: z.number().int(),
+  /** Optional header label, e.g. "CASE #01 — PART 2". Replaces the default "EP n · PART n". */
+  caseLabel: z.string().optional(),
+  /** Optional voiceover in public/, e.g. "voiceover-ep2.mp3". Plays from frame 0. */
+  voiceoverFile: z.string().optional(),
   business: z.object({
     name: z.string(),
     emoji: z.string(),
@@ -100,6 +104,10 @@ export const episodeSchema = z.object({
       optionA: option,
       optionB: option,
       cta: z.string(),
+      /** Optional frame the A/B cards come in. Defaults to 660 (22s). */
+      startFrame: z.number().int().min(0).optional(),
+      /** Optional frame Option B's card arrives. Defaults to 8 frames after Option A. */
+      optionBFrame: z.number().int().min(0).optional(),
       /** First frame of the 5-second vote timer. */
       timerStart: z.number().int(),
       timerSeconds: z.number().int().min(1),
@@ -111,7 +119,7 @@ export const episodeSchema = z.object({
     .object({
       votedChoice: z.enum(["A", "B"]),
       votedTitle: z.string(),
-      votePercent: z.number().min(0).max(100),
+      votePercent: z.number().min(0).max(100).optional(),
       verdict: z.enum(["SURVIVED", "BANKRUPT", "ON LIFE SUPPORT"]),
       headline: z.string(),
       stats: z.array(z.object({ label: z.string(), value: z.string() })).max(3),

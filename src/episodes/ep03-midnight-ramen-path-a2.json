@@ -1,0 +1,349 @@
+{
+  "mode": "part1_dilemma",
+  "episodeNumber": 3,
+  "caseLabel": "CASE #01 — PART 3",
+  "voiceoverFile": "voiceover-ep3.mp3",
+  "business": {
+    "name": "Midnight Ramen Shop: Price Hike",
+    "emoji": "🍜",
+    "tagline": "Simulation: Raise Menu Prices +15%"
+  },
+  "cash": {
+    "label": "CASH ON HAND",
+    "lowThreshold": 1500,
+    "keyframes": [
+      {
+        "frame": 0,
+        "value": 2945
+      },
+      {
+        "frame": 230,
+        "value": 2945
+      },
+      {
+        "frame": 278,
+        "value": 4745
+      },
+      {
+        "frame": 442,
+        "value": 4745
+      },
+      {
+        "frame": 502,
+        "value": 2145
+      },
+      {
+        "frame": 900,
+        "value": 2145
+      }
+    ]
+  },
+  "runway": {
+    "initialLabel": "STARTING CASH",
+    "initialValue": "$2,945",
+    "crisisLabel": "NET CASH REMAINING",
+    "crisisValue": "-$800",
+    "switchFrame": 691
+  },
+  "chart": {
+    "title": "LAST 30 DAYS · REVENUE vs BURN",
+    "revenue": [
+      560,
+      590,
+      563,
+      505,
+      489,
+      524,
+      546,
+      510,
+      455,
+      449,
+      487,
+      500,
+      456,
+      406,
+      410,
+      449,
+      453,
+      403,
+      359,
+      372,
+      411,
+      404,
+      349,
+      13,
+      40,
+      80,
+      61,
+      -3,
+      -20,
+      -1
+    ],
+    "burn": [
+      395,
+      400,
+      392,
+      380,
+      375,
+      383,
+      401,
+      418,
+      423,
+      415,
+      402,
+      397,
+      406,
+      424,
+      440,
+      445,
+      397,
+      384,
+      380,
+      389,
+      407,
+      423,
+      427,
+      419,
+      407,
+      402,
+      411,
+      429,
+      445,
+      449
+    ]
+  },
+  "expenses": [
+    {
+      "label": "Rent (due in 5 days)",
+      "amount": "$3,800",
+      "percent": 82
+    },
+    {
+      "label": "Payroll · night shift cut",
+      "amount": "$4,000",
+      "percent": 49
+    },
+    {
+      "label": "Spoilage + Card Debt",
+      "amount": "$1,900",
+      "percent": 41
+    }
+  ],
+  "moods": [
+    {
+      "from": 0,
+      "mood": "stressed"
+    },
+    {
+      "from": 230,
+      "mood": "relieved"
+    },
+    {
+      "from": 329,
+      "mood": "panicked"
+    },
+    {
+      "from": 528,
+      "mood": "stressed"
+    }
+  ],
+  "event": {
+    "frame": 329,
+    "exitFrame": 528,
+    "tone": "danger",
+    "sender": "Weekly Sales Report",
+    "title": "LOST TRAFFIC SALES",
+    "message": "Regulars walk -> volume drops -35%.",
+    "amount": "-$2,600"
+  },
+  "captions": [
+    {
+      "text": "OPTION A: RAISE MENU PRICES 15%.",
+      "start": 2,
+      "end": 103,
+      "wordFrames": [
+        2,
+        14,
+        31,
+        41,
+        50,
+        65
+      ],
+      "highlight": [
+        "RAISE"
+      ]
+    },
+    {
+      "text": "STARTING CASH: $2,945.",
+      "start": 103,
+      "end": 212,
+      "wordFrames": [
+        103,
+        113,
+        132
+      ],
+      "highlight": [
+        "STARTING"
+      ]
+    },
+    {
+      "text": "HIGHER MARGINS ADD $1,800.",
+      "start": 212,
+      "end": 283,
+      "wordFrames": [
+        212,
+        216,
+        230,
+        240
+      ],
+      "highlight": [
+        "MARGINS"
+      ]
+    },
+    {
+      "text": "MARGIN BOOST!",
+      "start": 283,
+      "end": 324,
+      "wordFrames": [
+        283,
+        298
+      ],
+      "highlight": [
+        "BOOST!"
+      ]
+    },
+    {
+      "text": "BUT THE REGULARS WALK.",
+      "start": 324,
+      "end": 374,
+      "wordFrames": [
+        324,
+        326,
+        329,
+        352
+      ],
+      "highlight": [
+        "WALK."
+      ]
+    },
+    {
+      "text": "VOLUME DROPS 35%.",
+      "start": 374,
+      "end": 442,
+      "wordFrames": [
+        374,
+        382,
+        394
+      ],
+      "highlight": [
+        "DROPS"
+      ]
+    },
+    {
+      "text": "$2,600 IN LOST TRAFFIC SALES.",
+      "start": 442,
+      "end": 528,
+      "wordFrames": [
+        442,
+        478,
+        484,
+        490,
+        502
+      ],
+      "highlight": [
+        "LOST"
+      ]
+    },
+    {
+      "text": "NOW YOU DECIDE.",
+      "start": 528,
+      "end": 566,
+      "wordFrames": [
+        528,
+        535,
+        540
+      ],
+      "highlight": [
+        "DECIDE."
+      ]
+    },
+    {
+      "text": "A: RENEGOTIATE RENT.",
+      "start": 566,
+      "end": 632,
+      "wordFrames": [
+        566,
+        586,
+        607
+      ],
+      "highlight": [
+        "RENEGOTIATE"
+      ]
+    },
+    {
+      "text": "B: GO DELIVERY ONLY.",
+      "start": 632,
+      "end": 691,
+      "wordFrames": [
+        632,
+        647,
+        650,
+        667
+      ],
+      "highlight": [
+        "DELIVERY"
+      ]
+    },
+    {
+      "text": "NET CASH REMAINING: $2,145.",
+      "start": 691,
+      "end": 807,
+      "wordFrames": [
+        691,
+        696,
+        710,
+        726
+      ],
+      "highlight": [
+        "NET"
+      ]
+    },
+    {
+      "text": "COMMENT A OR B BEFORE PART 4!",
+      "start": 807,
+      "end": 900,
+      "wordFrames": [
+        807,
+        811,
+        815,
+        818,
+        826,
+        840,
+        847
+      ],
+      "highlight": [
+        "COMMENT"
+      ]
+    }
+  ],
+  "decision": {
+    "question": "WHAT NOW?",
+    "optionA": {
+      "title": "RENEGOTIATE RENT",
+      "description": "Ask the landlord for lower rent before the next payment.",
+      "impact": "RENT ↓",
+      "risk": "MEDIUM"
+    },
+    "optionB": {
+      "title": "DELIVERY ONLY",
+      "description": "Close the dining room and sell through delivery apps only.",
+      "impact": "DINE-IN ✕",
+      "risk": "HIGH"
+    },
+    "cta": "COMMENT A OR B BEFORE PART 4",
+    "startFrame": 558,
+    "optionBFrame": 632,
+    "timerStart": 807,
+    "timerSeconds": 3
+  }
+}

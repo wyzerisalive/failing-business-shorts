@@ -2,8 +2,14 @@ import { Composition, Folder } from "remotion";
 import { FailingBusiness } from "./FailingBusiness";
 import { episodeSchema } from "./episodes/schema";
 import { VIDEO } from "./theme";
+import { PovRestaurantComposition } from "./components/pov/PovRestaurantComposition";
+import { RESTAURANT_POV_EPISODES } from "./data/restaurant-pov-episodes";
 import episode1 from "./episodes/episode1.json";
 import episode1Part2 from "./episodes/episode1-part2.json";
+import ep02 from "./episodes/ep02-midnight-ramen-path-a.json";
+import ep03 from "./episodes/ep03-midnight-ramen-path-a2.json";
+import ep04 from "./episodes/ep04-midnight-ramen-path-a3.json";
+import ep05 from "./episodes/ep05-midnight-ramen-finale.json";
 
 /**
  * To add an episode: drop a new JSON file in src/episodes/, import it here,
@@ -12,24 +18,41 @@ import episode1Part2 from "./episodes/episode1-part2.json";
 const EPISODES = [
   { id: "FailingBusiness", data: episode1 },
   { id: "FailingBusiness-Part2", data: episode1Part2 },
+  { id: "FailingBusiness-Ep02", data: ep02 },
+  { id: "FailingBusiness-Part3", data: ep03 },
+  { id: "FailingBusiness-Part4", data: ep04 },
+  { id: "FailingBusiness-Part5", data: ep05 },
 ];
 
 export const RemotionRoot: React.FC = () => {
   return (
-    <Folder name="Save-This-Business">
-      {EPISODES.map(({ id, data }) => (
+    <>
+      <Folder name="Save-This-Business">
+        {EPISODES.map(({ id, data }) => (
+          <Composition
+            key={id}
+            id={id}
+            component={FailingBusiness}
+            schema={episodeSchema}
+            defaultProps={episodeSchema.parse(data)}
+            durationInFrames={VIDEO.durationInFrames}
+            fps={VIDEO.fps}
+            width={VIDEO.width}
+            height={VIDEO.height}
+          />
+        ))}
+      </Folder>
+      <Folder name="Restaurant-POV">
         <Composition
-          key={id}
-          id={id}
-          component={FailingBusiness}
-          schema={episodeSchema}
-          defaultProps={episodeSchema.parse(data)}
-          durationInFrames={VIDEO.durationInFrames}
-          fps={VIDEO.fps}
-          width={VIDEO.width}
-          height={VIDEO.height}
+          id="RestaurantPov-Ep1"
+          component={PovRestaurantComposition}
+          durationInFrames={900}
+          fps={30}
+          width={1080}
+          height={1920}
+          defaultProps={{ episode: RESTAURANT_POV_EPISODES[0] }}
         />
-      ))}
-    </Folder>
+      </Folder>
+    </>
   );
 };

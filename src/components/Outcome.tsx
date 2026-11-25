@@ -57,9 +57,11 @@ export const VotedBadge: React.FC<{ outcome: Outcome; top: number; exitFrom: num
         <div style={{ fontSize: 30, fontWeight: 800, color: COLORS.text, marginTop: 6 }}>
           {outcome.votedTitle}
         </div>
-        <div style={{ fontSize: 24, fontWeight: 700, color: COLORS.muted, marginTop: 4 }}>
-          {outcome.votePercent}% of comments agreed
-        </div>
+        {outcome.votePercent !== undefined && (
+          <div style={{ fontSize: 24, fontWeight: 700, color: COLORS.muted, marginTop: 4 }}>
+            {outcome.votePercent}% of comments agreed
+          </div>
+        )}
       </div>
     </div>
   );
